@@ -1,0 +1,42 @@
+ceci est pour le moment très intéressant
+
+>>>How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+Permet de tracker les timestamps des changement et ainsi pouvoir dire depuis quand l'erreur s'y trouve.
+Permet de savoir a partir de quelle version une erreur s'est glisée
+Si jamais un changement a été ajouté dans une version très ancienne, on peut toujours aller rechercher le code
+
+>> When to commit ?
+one commit per logical change
+
+>> Pros/Cons Manual Commit
+Pros -> commit is based on logic change, we decide what's in the version 
+Cons -> ... don't see any right now
+
+>> git log permet de voir le log des changements.
+git log --stat -> donne des stats sur le nombre de changement
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+>> because for one feature in programming, multiple files can be used
+
+How can you use the commands git log and git diff to view the history of files?
+>> git log pour avoir toutes les versions, git diff pour faire la difference entre deux versions.
+
+What's a commit : >> snaptshot of all the files in a repository
+
+How to restore an old version : git checkout <commit id>
+
+How might using version control make you more confident to make changes that could break something?
+>> cause I can always restore a previous version and check differences with diff, so I can spot the bug
+
+Now that you have your workspace set up, what do you want to try using Git for?
+>> try others git command to go back to the newest version, try collaborative, explore
+
+How to create a repository
+>> Go in the folder, > git init, this will create the .git folder
+
+What happens when you initialize a repository? Why do you need to do it?
+>> creates the .git folder, which contains the metada the git version control system
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+>> git add : add file to staging area
+>> git status : tell you the files in the staging area that are different from working 
